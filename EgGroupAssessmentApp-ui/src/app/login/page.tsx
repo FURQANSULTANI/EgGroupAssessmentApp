@@ -97,7 +97,7 @@ const LoginPage: React.FC = () => {
           <p>Demo Credentials:</p>
           <div className="credentials">
             <div>
-              <strong>Admin:</strong> admin / Admin@123
+              <strong>Admin:</strong> admin / Admin@321
             </div>
             <div>
               <strong>User:</strong> user / User@123
