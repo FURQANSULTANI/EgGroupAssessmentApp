@@ -1,0 +1,22 @@
+﻿## Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+
+## Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## User-specific files
+*.rsuser
+
+## NuGet Packages
+*.nupkg
+**/packages/*
+
+## Others
+.DS_Store
