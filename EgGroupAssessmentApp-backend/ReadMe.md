@@ -35,6 +35,17 @@ The project follows a **Clean Layered Architecture** approach to ensure maintain
 - **Global Error Handling:** A centralized exception handling middleware is implemented to ensure consistent error responses across all endpoints.
 - **CORS:** Configured to allow seamless connection with common frontend development ports (3000, 5173).
 
+### 4. Design Decisions & Rationale
+
+**Why JWT Authentication?**  
+JWT (JSON Web Tokens) was chosen over traditional session-based authentication for several key reasons: it enables stateless authentication, making the API scalable and suitable for distributed systems; tokens are self-contained with user claims, reducing database lookups; and it provides seamless integration with modern frontend frameworks. This approach aligns with RESTful API best practices and supports future microservices architecture if needed.
+
+**Why Clean Layered Architecture?**  
+The layered architecture ensures clear separation of concerns, making the codebase maintainable and testable. Each layer has a specific responsibility, preventing tight coupling and allowing independent evolution of business logic, data access, and API layers.
+
+**Why Repository Pattern?**  
+The Repository Pattern abstracts data access logic, making it easier to swap databases or mock data sources during testing. This design choice enhances testability and maintains flexibility for future infrastructure changes.
+
 ---
 
 ## Setup Instructions
@@ -62,7 +73,7 @@ Open your terminal or Package Manager Console and run the following command to c
 # Using .NET CLI
 dotnet ef database update --project EgGroupAssessmentApp.Infrastructure --startup-project EgGroupAssessmentApp
 
-# OR within Visual Studio Package Manager Console
+# OR within Visual Studio Package Manager Console Ensure Project should be EgGroupAssessmentApp.Infrastructure
 Update-Database
 ```
 
