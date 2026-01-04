@@ -8,7 +8,7 @@ This repository contains the frontend application for the Eg Group Assessment pr
 
 - [Node.js](https://nodejs.org/) (v18 or higher recommended)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
-- The backend API should be running (default: `https://localhost:44341`)
+- The backend API should be running (default: `https://localhost:44371`)
 
 ### Installation
 
